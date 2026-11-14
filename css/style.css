@@ -1,7 +1,19 @@
 body {
     font-family: "Andada Pro", serif;
-    background-color: rgb(12, 71, 20);
+    background-color: rgb(19, 25, 31);
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
+
+.linha {
+    background-color: chocolate;
+    height: 5px;
+    width: 100%;
+}
+
+/* navbar */
+
 .navbar{
     font-size: 23px;
 }
@@ -9,6 +21,10 @@ body {
 .fogueira {
     width: 100px;
     height: 100px;
+}
+
+.nav-campfire p {
+    color: rgb(244, 168, 4);
 }
 
 .cor-navbar {
@@ -37,20 +53,420 @@ body {
     background-color: rgb(27, 27, 27);
 }
 
+/* --- */
+
+/* index.html - destaques  */
+
 .destaque1txt {
     color: white;
     font-size: 100px;
+    line-height: 1.2;
     height:300px;
     width: 1000px;
     position: absolute;
-    left: 150px;
-    top: 100px;
+    left: 90px;
+    top: 110px;
 }
 
-.destaque1png{
-    height: 1000px;
+b {
+    background-color: rgba(4, 59, 136, 0.447);
+    border-radius: 30px;
 }
 
-@media (max) {
+.destaque1txt1 {
+    color: rgb(168, 167, 167);
+    font-size: 30px;
+    position: absolute;
+    left: 90px;
+    top: 380px;
+}
+
+.destaque2txt {
+    color: white;
+    font-size: 70px;
+    line-height: 1.2;
+    height:300px;
+    width: 1000px;
+    position: absolute;
+    left: 90px;
+    top: 60px;
+}
+
+.destaque2txt b {
+    background-color: rgba(120, 9, 175, 0.447);
+    border-radius: 20px;
+}
+
+.destaque2txt1 {
+    color: rgb(154, 0, 197);
+    font-size: 30px;
+    position: absolute;
+    left: 90px;
+    top: 330px;
+}
+
+.destaque3txt {
+    color: white;
+    font-size: 85px;
+    line-height: 1.2;
+    height:300px;
+    width: 1000px;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+}
+
+.destaque3txt b {
+    background-color: rgba(0, 174, 255, 0.185);
+    border-radius: 30px;
+}
+
+.destaque3txt1 {
+    color: rgb(0, 138, 185);
+    font-size: 30px;
+    position: absolute;
+    left: 40px;
+    top: 280px;
+}
+
+/* --- */
+
+/* favoritos.html */
+
+.favoritos {
+    height: 500px;
+    color: rgb(97, 97, 97);;
+    text-align: center;
+    position: relative;
+    top: 250px;
+}
+
+/* --- */
+
+.h1oferta {
+    margin: 20px 20px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(0, 28, 61);
+    border-radius:50px;
+    width: 400px;
+    height: 80px;
+}
+
+.h1oferta img {
+    /* margin: 0px 0px 0px 10px; */
+    width: 70px;
+    height: 70px;
+}
+
+.h1oferta h1 {
+    /* margin: 7px 0px 0px 20px ; */
+    color: #fff;
+    font-size: 50px;
+}
+
+/* cards */
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards2 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px 0px 0px;
+}
+
+.card {
+    color: #fff;
+    margin: 0px 20px 20px 40px ;
+    background-color: black;
+    border: 4px solid rgb(246, 176, 0);
+}
+
+.card strong {
+    font-size: 20px;
+    color: rgb(12, 184, 12);
+}
+
+/* cards - pasta*/
+
+.relacionados {
+    color: rgb(246, 176, 0);
+    height: 30px;
+}
+
+.card-rela{
+    display: flex;
+}
+
+.linha-cards {
+     margin: 0px 0px 15px 0px;
+    background-color: rgb(246, 176, 0);
+    height: 5px;
+    width: 100%;
+}
+
+.card-1 {
+    color: #e2e2e2;
+    display: flex;
+}
+
+.preço {
+    font-variant: unset;
+    font-size: 50px;;
+    color: #fff;
+}
+
+.card-1 .card-img {
+    margin:  30px 0px 30px 30px;
+    border: 5px solid rgb(246, 176, 0);
+    border-radius:  20px;
+    height:800px;
+    width: 1000px;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.botões {
+    display: flex;
+}
+
+.botões button{
+     margin:  0px 10px 20px 0px;
+}
+
+.botão-comp {
+    width: 300px;
+}
+
+/* --- */
+
+/* rodapé */
+
+/* footer .linha {
+    position: relative;
+    top:100vh
+} */
+
+footer{
+    color:#fff ;
+    /* background-image: url(/img/Design\ sem\ nome\ \(1\).png);
+    background-size:contain; */
+    background-color: rgb(0, 28, 61);
+    font-size: 25px;
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFF8F0;
+    text-align: center;
+    position: relative;
+    top:100%
+}
+
+/* --- */
+
+@media (width < 800px) {
     
+.destaque1txt {
+    color: white;
+    font-size: 7vw;
+    line-height: 1.2;
+    max-height:300px;
+    max-width: 1000px;
+    position: absolute;
+    left: 3vw;
+    top: 3vw;
+}
+
+b {
+    background-color: rgba(4, 59, 136, 0.447);
+    border-radius: 30px;
+}
+
+.destaque1txt1 {
+    color: rgb(168, 167, 167);
+    font-size: 2.5vw;
+    position: absolute;
+    left: 3vw;
+    top: 20vw;
+}
+
+.destaque2txt {
+    color: white;
+    font-size: 5vw;
+    line-height: 1.2;
+    max-height:300px;
+    max-width: 1000px;
+    position: absolute;
+    left: 5vw;
+    top: 1vw;
+}
+
+.destaque2txt b {
+    background-color: rgba(120, 9, 175, 0.447);
+    border-radius: 20px;
+}
+
+.destaque2txt1 {
+    color: rgb(154, 0, 197);
+    font-size: 2vw;
+    position: absolute;
+    left: 5vw;
+    top: 19vw;
+}
+
+.destaque3txt {
+    color: white;
+    font-size: 6vw;
+    line-height: 1.2;
+    max-height:300px;
+    max-width: 1000px;
+    position: absolute;
+    left: 4vw;
+    top: 3vw;
+}
+
+.destaque3txt b {
+    background-color: rgba(0, 174, 255, 0.185);
+    border-radius: 30px;
+}
+
+.destaque3txt1 {
+    color: rgb(0, 138, 185);
+    font-size: 4vw;
+    position: absolute;
+    left: 4vw;
+    top: 18vw;
+}
+
+
+/* --- */
+
+.h1oferta {
+    margin: 20px 20px 20px 40px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 28, 61);
+    border-radius:50px;
+    max-width: 38vw;
+    max-height: 8vw;
+}
+
+.h1oferta img {
+    margin: 0px 5px 0px 5px;
+    width: 5vw;
+    height: 5vw;
+}
+
+.h1oferta h1 {
+    margin: 3px 0px 3px 0px ;
+    color: #fff;
+    font-size: 5vw;
+}
+
+/* cards */
+
+
+.cards {
+    display: flex;
+    flex-direction:column;
+    max-width: 80vw;
+}
+
+.cards2 {
+    display: flex;
+    flex-direction: row;
+    /* margin: 20px 0px 0px 0px; */
+}
+
+.card {
+    color: #fff;
+    /* margin: 0px 20px 20px 40px ; */
+    background-color: black;
+    border: 4px solid rgb(246, 176, 0);
+}
+
+.card strong {
+    font-size: 5vw;
+    color: rgb(12, 184, 12);
+}
+
+
+/* cards - pasta*/
+
+.relacionados {
+    color: rgb(246, 176, 0);
+    height: 5.5vw;
+}
+
+.card-rela{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.linha-cards {
+     margin: 0px 0px 15px 0px;
+    background-color: rgb(246, 176, 0);
+    height: 5px;
+    width: 100%;
+}
+
+.card-1 {
+    color: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+}
+
+.preço {
+    font-variant: unset;
+    font-size: 10vw;;
+    color: #fff;
+}
+
+.card-1 .card-img {
+    margin:  30px 0px 30px 30px;
+    border: 5px solid rgb(246, 176, 0);
+    border-radius:  20px;
+    max-height:70vw;
+    width: 70vw;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.card-2 h1 {
+    font-size: 7vw;
+    max-width: 75vw;
+}
+
+.botões {
+    display: flex;
+    width: 75vw;
+}
+
+.botões button{
+     margin:  0px 10px 20px 0px;
+}
+
+.botão-comp {
+    width: 1000vw;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+
 }
